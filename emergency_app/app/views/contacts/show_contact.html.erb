@@ -1,8 +1,22 @@
 <h1>Welcome To The SHOW A Contact Page</h1>
 
-  # get '/contacts/:id', to: 'contacts#show'
+  Show/Edit/Destroy Contact
 
+    <div class="first-name"> 
+    <%= @contact.first_name %>
+    </div> <!-- first-name -->
 
-  # delete '/contacts/:id', to: 'contacts#destroy'
+    <div class="last-name"> 
+	<%= @contact.last_name %>
+	</div> <!-- last-name -->
+
+	<div class="email"> 
+	<%= @contact.email %>
+	</div> <!-- email -->
+
+	<div class="cell-phone-number"> 
+	<%= @contact.cell_phone_number %>
+	</div> <!-- cell-phone-number -->
 
   
+  ADD Edit/Destroy Button

@@ -30,20 +30,21 @@ class UsersController < ApplicationController
 
 	# 'users#edit'
 	def edit
-	  # @contact = Contact.all
+	  @user = User.find(params[:id])
 	  render :edit_user
 	end
 
     # 'users#update'
 	def update
-	  # @contact = Contact.all
-	  # for now just redirect to all
+	  @user = User.find(params[:id])
+	  @user_params = params.require(:user).permit(:first_name, :last_name, :email, :password)
 	  redirect_to '/users'
 	end
 
 	# 'users#destroy' (still needs testing)
 	def destroy
-	  # @contact = Contact.all
+	  @user = User.find(params[:id])
+	  @user.destroy
 	  redirect_to '/users'
 	end
 

@@ -36,7 +36,7 @@ class ListsController < ApplicationController
     # 'lists#update'
 	def update
 	  @list = List.find(params[:id])
-	  @list_params = params.require(:list).permit(:title)
+	  @list_params = params.require(:list).permit(:title, :todo)
 	  render :edit_list
 	end
 

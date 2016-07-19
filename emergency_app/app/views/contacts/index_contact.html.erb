@@ -1,1 +1,15 @@
 <h1>Welcome To The ALL Contacts Page</h1>
+
+<% @contacts.each do |contact| %>
+
+<div class="contacts-container">
+  <h6 class="contact-first-name"><%= contact.first_name %> </h6>
+  <h6 class="contact=last-name"><%= contact.last_name %> </h6>
+  <h6 class="contact-email"><%= contact.email %> </h6>
+  <h6 class="contact-cell-phone-number"><%= contact.cell_phone_number %> </h6>
+  
+	<% end %>
+</div>
+
+
+Add Ability to Click and go to contact (can delete there also)
