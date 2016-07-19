@@ -1,0 +1,94 @@
+/*Launch Page: index#home */
+/** {
+	text-align: center;
+}*/
+
+* {
+  text-align: center;
+}
+.heading {
+  text-align: center;
+}
+
+.modal-title {
+  font-size: 30px;
+}
+
+.text-area {
+  font-size: 20px;
+  width: 450px;
+  height: 250px;
+}
+
+/*
+.launch-div {
+  text-align: center;	
+  margin: 10px;
+}
+
+.launch-btn {
+  background-color: #FF0000;
+  border-color: #FF0000;
+  width: 200px;
+  color: #000000;
+  font-size: 30px;
+  font-weight: 2px;
+  border-radius: 10px;
+}
+
+/*.new-message-description {
+  margin: 10px;
+}*/
+
+/*.form-control {
+  margin: auto;
+  float: none;
+  max-width: 500px;
+  max-height: 500px;
+  border-style: solid !important;
+  border-width: 10px !important;
+}*/
+
+.text_area {
+  margin: auto;
+  float: none;
+  max-width: 500px;
+  max-height: 500px;
+  border-style: solid !important;
+  border-width: 10px !important;
+}
+
+.submit-div {
+  text-align: center;
+  position: relative;
+  /*float: left;*/
+  margin: 10px;
+}
+
+.btn-submit {
+  /*background-color: #FF0000;*/
+  /*border-color: #FF0000;*/
+  /*width: 200px;*/
+  color: #000000;
+  font-size: 30px;
+  font-weight: 2px;
+  border-radius: 10px;
+}
+
+.Geo-div {
+  text-align: center;
+  position: relative;
+  /*float: right;*/
+  margin: 10px;
+}
+.btn-geo {
+  /*background-color: #FF0000;*/
+  /*border-color: #FF0000;*/
+  /*width: 200px;*/
+  color: #000000;
+  font-size: 30px;
+  font-weight: 2px;
+  border-radius: 10px;
+}
+*/
+

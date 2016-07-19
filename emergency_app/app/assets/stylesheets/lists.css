@@ -1,0 +1,62 @@
+/** {
+	text-align: center;
+}*/
+
+.container {
+	text-align: center;
+}
+.check-box {
+	/*position: relative;*/
+	float: left;
+	max-width: 1px;
+}
+
+.ex-divs{
+	height: 20px;
+}
+
+label {
+	color: black;
+}
+
+/*Example css*/
+div#form-wrapper {
+	border: 1px solid black;
+	margin: 0 auto;
+}
+/* if you ever want it to be centered*/
+/* at different screen width use media queries */
+/*for example*/
+@media screen and (min-width: 1000px) {
+	/*the div will be centered on bigger screens*/
+	/* and taking off bootstraps float left*/
+	div#form-wrapper {
+		background-color: blue;
+		float: none;
+		border: 1px solid black;
+		margin: 0 auto;
+	}
+}
+
+
+
+/* ^^^^ ----- example css------ */
+
+.form-group {
+	display: relative;
+	max-width: 800px;
+	margin: -25px;
+}
+
+.check-list {
+	float: right;
+}
+/*.title-field {
+	text-align: center; 
+	margin: 10px;
+}
+
+.todo-field {
+	text-align: center; 
+	margin: 10px;
+}

@@ -1,1 +1,24 @@
 <h1>Welcome To The NEW Contacts Page</h1> 
+
+New Contact
+
+<%= form_for @contact do |f| %>
+  <div>
+    <%= f.text_field :first_name, placeholder: "First Name" %>
+  </div>
+  <div>
+    <%= f.text_field :last_name, placeholder: "Last Name" %>
+  </div>
+  <div>
+    <%= f.text_field :email, placeholder: "Email" %>
+  </div>
+  <div>
+
+
+<!-- IS THIS AN INTEGAR FIELD -->
+  <div>
+    <%= f.text_field :cell_phone_number, placeholder: "Cell Phone Number" %>
+  </div>
+    
+  <%= f.submit "Add New Contact" %>
+<% end %>

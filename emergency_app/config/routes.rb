@@ -4,117 +4,165 @@ Rails.application.routes.draw do
   
   ########################################################################
  
-  ##Home/Launch Page/New Message##
+  #Home/Launch Page/New Message##
 
   # Index/Home Page
- #  root to: 'index#show'
-
- #  # New Message 
- #  POP UP? TEST
- #  AJAX?
- #  TEST
-
- #  ########################################################################
-
- #  ##Service Overview##
+  #New Messages Will Start From Here
+  # root to: 'index#home'
+  get '/', to: 'index#home'
   
- #  # About Service/How To Use Service Page
- #  get '/about', to: 'about#show'
+  # New Message 
+  # Drop Down when logged in only? 
+  # AJAX?
+  # TEST
 
- #  ########################################################################
+  ########################################################################
 
- # ##USERS: Sign-Up/Profile##
-
- #  # New User Profile Page
- #  get '/signup', to: 'users#new'
-
- #  # Create User Profile Page
- #  post '/users', to: 'users#create'
-
- #  # Show User Profile Page
- #  get '/users/:id', to: 'users#show'
-
- #  (can you show and edit on same page)
-
- #  # Edit User Profile Page
- #  get '/users/:id/edit', to: 'users#edit'
-
- #   # Delete User Profile Page
- #  delete '/users/:id', to: 'users#destroy'
-
- #  ########################################################################
-
- # ##USERS: Log In/Session##
-
- #  # New User Session
- #  get '/signin', to: 'sessions#new'
-
- #  # Create User Session
- #  post '/sessions', to: 'sessions#create'
-
- #  why no id?
-
- #  ##########################################
+  ##Service Overview##
   
- #  ##USERS: Log Out/Session##
+  # About Service/How To Use Service Page
+  get '/about', to: 'about#index'
 
- #  # Terminate User Session
- #  delete '/sessions', to: 'sessions#destroy'
+  ########################################################################
 
- #  why no id?
- #  On Click 'Log Out'
+ ##USERS: Sign-Up/Profile##
 
- #  ########################################################################
+  # get "/sign_in", to: "sessions#new"
 
- #  ##Emergency List Of To Dos##
+  # post "/sessions", to: "sessions#create"
+
+  ########################################################################
+
+  # New User Profile Page
+  get '/users/new', to: 'users#new'
+
+  # In the future: all members on same profile
+
+  # Create User Profile Page
+  post '/users', to: 'users#create'
+
+  # Show User Profile Page
+  get '/users/:id', to: 'users#show'
+
+  # (can you show and edit on same page)
+
+  # Edit User Profile Page
+  get '/users/:id/edit', to: 'users#edit'
+
+   # Delete User Profile Page
+  delete '/users/:id', to: 'users#destroy'
+
+  ########################################################################
+
+ ##USERS: Log In/Session##
+
+  # # New User Session
+  # get '/signin', to: 'sessions#new'
+
+  # # Create User Session
+  # post '/sessions', to: 'sessions#create'
+
+  # why no id?
+
+  ##########################################
   
- #  # New Emergency To Do List Page
- #  get '/todos', to: 'todos#new'
+  ##USERS: Log Out/Session##
 
- #  # Create Emergency To Do List Page
- #  post '/todos', to: 'todos#create'
+  # # Terminate User Session
+  # delete '/sessions', to: 'sessions#destroy'
 
- #  # Show Emergency To Do List Page
- #  get '/todos/:id', to: 'todos#show'
+  # why no id?
+  # On Click 'Log Out'
 
- #  # Edit Emergency To Do List Page
- #  get '/todos/:id/edit', to: 'todos#edit'
+  ########################################################################
 
- #  # Update Section Of Emergency To Do List Page
- #  patch '/todos/:id', to: 'todos#update'
+  # AJAX on page?
 
- #  # Delete Emergency To Do List Page
- #  delete '/todos/:id', to: 'todos#destroy'
+  # ##Emergency List Of To Dos##
 
- #  ########################################################################
+  # # New Emergency To Do List Page
+  # get '/todos/new', to: 'todos#new'
 
- #  ##Emergency Titles##
- 
- #  Show ALL Emergency Titles
- #  get '/titles', to: 'titles#show'
- 
- #  DO NOT need CRUD for this: can simply render titles to click on 
- #  and make sure disappear when deleted in get '/todos/:id', to: 'todos#show'
+  # # Create Emergency To Do List Page
+  # post '/todos', to: 'todos#create'
+
+  # # Show Emergency To Do List Page
+  # get '/todos/:id', to: 'todos#show'
+
+  # # Edit Emergency To Do List Page
+  # get '/todos/:id/edit', to: 'todos#edit'
+
+  # # Update Section Of Emergency To Do List Page
+  # patch '/todos/:id', to: 'todos#update'
+
+  # # Delete Emergency To Do List Page
+  # delete '/todos/:id', to: 'todos#destroy'
+
+  ########################################################################
+
+# All Lists (By Title)
+  get '/lists', to: 'lists#index'
+
+   # New Emergency List
+  get '/lists/new', to: 'lists#new'
+
+  # Create Emergency List (unseen)
+  post '/lists', to: 'lists#create'
   
- #  ########################################################################
+  # Show Emergency List
+  get '/lists/:id', to: 'lists#show'
 
- #  ##Emergency Contacts##
+  # Edit Emergency List
+  get '/lists/:id/edit', to: 'lists#edit'
 
- #  # New Emergency Contacts
- #  get '/contacts', to: 'contacts#new'
+  # Patch Emergency List (unseen)
+  patch '/lists/:id/edit', to: 'lists#update'
 
- #  # Create Emergency Contacts
- #  post '/contacts', to: 'contacts#create'
+  # Delete Emergency List (unseen)
+  delete '/lists/:id', to: 'lists#destroy'
+
+  ########################################################################
+
+  ##Emergency Contacts##
+
+  # All Contacts
+  get '/contacts', to: 'contacts#index'
+
+   # New Emergency Contact
+  get '/contacts/new', to: 'contacts#new'
+
+  # Create Emergency Contacts (unseen)
+  post '/contacts', to: 'contacts#create'
   
- #  # Show Emergency Contacts
- #  get '/contacts/:id', to: 'contacts#show'
+  # Show Emergency Contact
+  get '/contacts/:id', to: 'contacts#show'
 
- #  # Edit Emergency Contacts
- #  get '/contacts/:id/edit', to: 'contacts#edit'
+  # Edit Emergency Contacts
+  get '/contacts/:id/edit', to: 'contacts#edit'
 
- #  # Delete Emergency Contacts
- #  delete '/contacts/:id', to: 'contacts#destroy'
+  # Patch Emergency Contacts (unseen)
+  patch '/contacts/:id/edit', to: 'contacts#update'
 
+  # Delete Emergency Contacts (unseen)
+  delete '/contacts/:id', to: 'contacts#destroy'
+
+
+########################################################################
+
+# All Messages
+  get '/messages', to: 'messages#index'
+
+   # New Message
+  get '/messages/new', to: 'messages#new'
+
+  # Create Message (unseen)
+  post '/messages', to: 'messages#create'
+  
+  # Show Message
+  get '/messages/:id', to: 'messages#show'
+
+  # # Delete Messages (unseen)
+  # delete '/messages/:id', to: 'messages#destroy'
 end
   
 
