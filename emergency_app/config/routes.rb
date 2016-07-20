@@ -105,72 +105,79 @@ Rails.application.routes.draw do
   # delete '/todos/:id', to: 'todos#destroy'
 
   ########################################################################
-
-# All Lists (By Title)
-  get '/lists', to: 'lists#index'
-
-   # New Emergency List
-  get '/lists/new', to: 'lists#new'
-
-  # Create Emergency List (unseen)
-  post '/lists', to: 'lists#create'
   
-  # Show Emergency List
-  get '/lists/:id', to: 'lists#show'
+  resources :lists
+   
+# # All Lists (By Title)
+#   get '/lists', to: 'lists#index'
 
-  # Edit Emergency List
-  get '/lists/:id/edit', to: 'lists#edit'
+#    # New Emergency List
+#   get '/lists/new', to: 'lists#new'
 
-  # Patch Emergency List (unseen)
-  patch '/lists/:id/edit', to: 'lists#update'
+#   # Create Emergency List (unseen)
+#   post '/lists', to: 'lists#create'
+  
+#   # Show Emergency List
+#   get '/lists/:id', to: 'lists#show'
 
-  # Delete Emergency List (unseen)
-  delete '/lists/:id', to: 'lists#destroy'
+#   # Edit Emergency List
+#   get '/lists/:id/edit', to: 'lists#edit'
+
+#   # Patch Emergency List (unseen)
+#   patch '/lists/:id/edit', to: 'lists#update'
+
+#   # Delete Emergency List (unseen)
+#   delete '/lists/:id', to: 'lists#destroy'
 
   ########################################################################
 
   ##Emergency Contacts##
 
-  # All Contacts
-  get '/contacts', to: 'contacts#index'
+  resources :contacts
 
-   # New Emergency Contact
-  get '/contacts/new', to: 'contacts#new'
+  # # All Contacts
+  # get '/contacts', to: 'contacts#index'
 
-  # Create Emergency Contacts (unseen)
-  post '/contacts', to: 'contacts#create'
+  #  # New Emergency Contact
+  # get '/contacts/new', to: 'contacts#new'
+
+  # # Create Emergency Contacts (unseen)
+  # post '/contacts', to: 'contacts#create'
   
-  # Show Emergency Contact
-  get '/contacts/:id', to: 'contacts#show'
+  # # Show Emergency Contact
+  # get '/contacts/:id', to: 'contacts#show'
 
-  # Edit Emergency Contacts
-  get '/contacts/:id/edit', to: 'contacts#edit'
+  # # Edit Emergency Contacts
+  # get '/contacts/:id/edit', to: 'contacts#edit'
 
-  # Patch Emergency Contacts (unseen)
-  patch '/contacts/:id/edit', to: 'contacts#update'
+  # # Patch Emergency Contacts (unseen)
+  # patch '/contacts/:id/edit', to: 'contacts#update'
 
-  # Delete Emergency Contacts (unseen)
-  delete '/contacts/:id', to: 'contacts#destroy'
+  # # Delete Emergency Contacts (unseen)
+  # delete '/contacts/:id', to: 'contacts#destroy'
 
 
 ########################################################################
 
 # All Messages
-  get '/messages', to: 'messages#index'
 
-   # New Message
-  get '/messages/new', to: 'messages#new'
+  resources :messages
 
-  # Create Message (unseen)
-  post '/messages', to: 'messages#create'
+  # get '/messages', to: 'messages#index'
+
+  #  # New Message
+  # get '/messages/new', to: 'messages#new'
+
+  # # Create Message (unseen)
+  # post '/messages', to: 'messages#create'
   
-  # Show Message
-  get '/messages/:id', to: 'messages#show'
+  # # Show Message
+  # get '/messages/:id', to: 'messages#show'
 
-  # # Delete Messages (unseen)
-  # delete '/messages/:id', to: 'messages#destroy'
+  # # # Delete Messages (unseen)
+  # # delete '/messages/:id', to: 'messages#destroy'
   
-  post '/messages/send_text' => 'messages#send_text'
+  # post '/messages/send_text' => 'messages#send_text'
 
 end
   

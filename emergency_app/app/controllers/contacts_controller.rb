@@ -17,7 +17,7 @@ class ContactsController < ApplicationController
 	# 'contacts#create'
 	def create
 	  contact_params = params.require(:contact).permit(:first_name, :last_name, :email, :number)
-      @contact = Contact.create(message_params)	
+      @contact = Contact.create(contact_params)	
 	  redirect_to '/contacts'
 	end
 
@@ -30,7 +30,7 @@ class ContactsController < ApplicationController
 	# 'contacts#edit'
 	def edit
 	  @contact = Contact.find(params[:id])
-	  render :edit_contact
+	  redirect_to '/contacts/:id'
 	end
 
     # 'contacts#update'

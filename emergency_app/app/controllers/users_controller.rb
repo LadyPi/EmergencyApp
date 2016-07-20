@@ -8,7 +8,7 @@ class UsersController < ApplicationController
 	def index
       @user = current_user
 	  @users = User.all	
-	  render index_user
+	  render :index_user
 	end
 
 	# 'users#new'

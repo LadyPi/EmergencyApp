@@ -20,7 +20,7 @@ class ListsController < ApplicationController
 	  @list = List.create(list_params)
 	  # @user = current_user
 	  # @user.lists << @list
-	  redirect_to '/lists'
+	  render :show_list
 	end
 
 	# 'lists#show'

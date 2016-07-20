@@ -1,32 +1,23 @@
 <h1>Welcome To The New List Page</h1>
 
 
-<%= form_for @list, url: lists_new_path(@lists), method: :post do |f| %>
+<%= form_for @list, url: lists_path, method: :post do |f| %>
 
 <!-- GO TO SHOW and add that content in here -->
 
-<div class="row">
+<!-- <div class="row">
 <div class="container" >
 
 <form class="checklist">
   
   <div class='check-box'>
-  <input type="checkbox">
- </div> <!-- check-box -->
-  
-  <fieldset class="form-group">
-    <label for="formGroupExampleInput"></label>
-    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
-  </fieldset>
+  <input type="checkbox"> -->
 
-  <fieldset class="form-group">
-    <label for="formGroupExampleInput2"></label>
-    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
-  </fieldset>
-</form> 
 
-</div>
-</div>
+<%= f.text_field :title, placeholder: "Title" %>
+<%= f.text_field :todo, placeholder: "To Do" %>
+
+
 
   <%= f.submit "Create New List" %>
 <% end %>
