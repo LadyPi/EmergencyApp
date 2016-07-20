@@ -12,9 +12,7 @@ Rails.application.routes.draw do
   get '/', to: 'index#home'
   
   # New Message 
-  # Drop Down when logged in only? 
-  # AJAX?
-  # TEST
+  
 
   ########################################################################
 
@@ -31,6 +29,29 @@ Rails.application.routes.draw do
 
   # post "/sessions", to: "sessions#create"
 
+
+  ##########################################
+
+  ##USERS: Log In/Session##
+
+  # New User Session
+  get '/sign_in', to: 'sessions#new'
+
+  # Create User Session
+  post '/sessions', to: 'sessions#create'
+
+  # why no id?
+
+  ##########################################
+  
+  ##USERS: Log Out/Session##
+
+  # Terminate User Session
+  delete '/sessions', to: 'sessions#destroy'
+
+  # why no id?
+  # On Click 'Log Out'
+
   ########################################################################
 
   # New User Profile Page
@@ -42,37 +63,20 @@ Rails.application.routes.draw do
   post '/users', to: 'users#create'
 
   # Show User Profile Page
-  get '/users/:id', to: 'users#show'
+  get '/users/:id', to: 'users#show', as: 'user'
 
   # (can you show and edit on same page)
 
   # Edit User Profile Page
-  get '/users/:id/edit', to: 'users#edit'
+  get '/users/:id/edit', to: 'users#edit', as: 'user_edit'
+
+  # UPDATE
 
    # Delete User Profile Page
   delete '/users/:id', to: 'users#destroy'
 
-  ########################################################################
-
- ##USERS: Log In/Session##
-
-  # # New User Session
-  # get '/signin', to: 'sessions#new'
-
-  # # Create User Session
-  # post '/sessions', to: 'sessions#create'
-
-  # why no id?
-
-  ##########################################
-  
-  ##USERS: Log Out/Session##
-
-  # # Terminate User Session
-  # delete '/sessions', to: 'sessions#destroy'
-
-  # why no id?
-  # On Click 'Log Out'
+  # Just for testing
+  get "/users", to: "users#index"
 
   ########################################################################
 
@@ -163,10 +167,12 @@ Rails.application.routes.draw do
 
   # # Delete Messages (unseen)
   # delete '/messages/:id', to: 'messages#destroy'
+  
+  post '/messages/send_text' => 'messages#send_text'
+
 end
   
-
-
+########################################################################
 
 
 
