@@ -54,29 +54,31 @@ Rails.application.routes.draw do
 
   ########################################################################
 
-  # New User Profile Page
-  get '/users/new', to: 'users#new'
+  resources :users
+  
+  # # New User Profile Page
+  # get '/users/new', to: 'users#new'
 
-  # In the future: all members on same profile
+  # # In the future: all members on same profile
 
-  # Create User Profile Page
-  post '/users', to: 'users#create'
+  # # Create User Profile Page
+  # post '/users', to: 'users#create'
 
-  # Show User Profile Page
-  get '/users/:id', to: 'users#show', as: 'user'
+  # # Show User Profile Page
+  # get '/users/:id', to: 'users#show', as: 'user'
 
-  # (can you show and edit on same page)
+  # # (can you show and edit on same page)
 
-  # Edit User Profile Page
-  get '/users/:id/edit', to: 'users#edit', as: 'user_edit'
+  # # Edit User Profile Page
+  # get '/users/:id/edit', to: 'users#edit', as: 'user_edit'
 
-  # UPDATE
+  # # UPDATE
 
-   # Delete User Profile Page
-  delete '/users/:id', to: 'users#destroy'
+  #  # Delete User Profile Page
+  # delete '/users/:id', to: 'users#destroy'
 
-  # Just for testing
-  get "/users", to: "users#index"
+  # # Just for testing
+  # get "/users", to: "users#index"
 
   ########################################################################
 

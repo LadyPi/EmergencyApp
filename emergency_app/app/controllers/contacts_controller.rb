@@ -1,7 +1,9 @@
 class ContactsController < ApplicationController
-
+  before_action :logged_in?, only: [:show, :index, :new]
+  
 	# 'contacts#index'
 	def index
+	  # @user = current_user
 	  @contact = Contact.all 
 	  render :index_contact
 	end
@@ -14,7 +16,7 @@ class ContactsController < ApplicationController
 
 	# 'contacts#create'
 	def create
-	  contact_params = params.require(:contact).permit(:first_name, :last_name, :email, :cell_phone_number)
+	  contact_params = params.require(:contact).permit(:first_name, :last_name, :email, :number)
       @contact = Contact.create(message_params)	
 	  redirect_to '/contacts'
 	end

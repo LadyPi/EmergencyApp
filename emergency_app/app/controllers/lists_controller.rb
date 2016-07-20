@@ -1,7 +1,9 @@
 class ListsController < ApplicationController
-
+  before_action :logged_in?, only: [:show, :index, :new]
+  
 # 'lists#index'
 	def index
+	  # @user = current_user
 	  @list = List.all
 	  render :index_list
 	end

@@ -1,23 +1,33 @@
-class MessagesController < ApplicationController
-
+class MessagesController < ApplicationController 
+  before_action :logged_in?, only: [:show, :index, :new]
+  
 # 'messages#new'
 	def new
-      @message = Message.new
+	  @message = Message.new
 	  render :new_message
 	end
 
-	# 'messages#create'
+    # 'messages#create'
 	def create
 	  message_params = params.require(:message).permit(:text)
 	  @message = Message.create(message_params)
 	  # @user = current_user 
 	   # if @message.save
 	   # temporary
-	  	redirect_to '/lists'
+	  	redirect_to '/messages'
 	end
 
-'messages#index'
+#     def send_text
+#     	@message = Message.new(phone_params)
+#     	@numb = :contact => @number
+#     	@message.send_sms(@numb.clean_number)
+#     end
+
+# 'messages#index'
 	def index
+	  # @user = current_user
+	  # @contacts = @user.contacts
+	  @contacts = Contact.all
 	  @messages = Message.all	
 	  render :index_message
 	end
@@ -32,5 +42,9 @@ class MessagesController < ApplicationController
 	# def destroy
 	#   # @message = Message.all
 	#   redirect_to '/messages'
+	# end
+
+	# def phone_params
+	# 	params.require(:contact).permit(:number)
 	# end
 end

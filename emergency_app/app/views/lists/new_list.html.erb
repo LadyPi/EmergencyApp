@@ -1,5 +1,10 @@
 <h1>Welcome To The New List Page</h1>
 
+
+<%= form_for @list, url: lists_new_path(@lists), method: :post do |f| %>
+
+<!-- GO TO SHOW and add that content in here -->
+
 <div class="row">
 <div class="container" >
 
@@ -23,7 +28,8 @@
 </div>
 </div>
 
-
+  <%= f.submit "Create New List" %>
+<% end %>
 
 
 

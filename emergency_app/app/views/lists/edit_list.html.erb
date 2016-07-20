@@ -1,1 +1,31 @@
 <h1>Welcome To The EDIT List Page</h1>Standby
+
+<%= form_for @list, url: lists_path(@list), method: :patch do |f| %>
+
+<div class="list-title">
+<%= f.text_field :title, placeholder: "Title" %>
+<div> <!-- list-title -->
+
+<div class="list-todo">
+<%= f.text_field :todo, placeholder: "To Do" %>
+<div> <!-- list-todo -->
+
+<div class="list-todo">
+<%= f.text_field :todo, placeholder: "To Do" %>
+<div> <!-- list-todo -->
+
+<div class="list-todo">
+<%= f.text_field :todo, placeholder: "To Do" %>
+<div> <!-- list-todo -->
+
+<div class="list-todo">
+<%= f.text_field :todo, placeholder: "To Do" %>
+<div> <!-- list-todo -->
+
+<div class="list-todo">
+<%= f.text_field :todo, placeholder: "To Do" %>
+<div> <!-- list-todo -->
+
+<%= f.submit "Update List">
+
+<% end %>

@@ -1,10 +1,11 @@
 <h1>Welcome To The Index List Page</h1>Standby
 
-<% @lists.each do |list| %>
+<% @list.each do |list| %>
 
 <div class="lists-container">
-  <h6 class="list-todo-text"><%= list.text %> </h6>
-  <h6 class="list-title"><%= list.title %> </h6>
+    <h6 class="list-title"><%= list.title %> </h6>
+
+  <h6 class="list-todo-text"><%= list.todo %> </h6>
 	<% end %>
 </div>
 

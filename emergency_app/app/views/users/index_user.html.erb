@@ -2,3 +2,25 @@
 with members possibly
 
 Will ADD ERROR FOR THIS
+
+<div>
+<% @users.each do |user| %>
+<div>
+<%= user.first_name %>
+</div>
+
+<div>
+<%= user.last_name %>
+</div>
+
+<div>
+<%= user.number %>
+</div>
+
+
+<div>
+<%= user.email %>
+</div>
+
+<% end %>
+</div>

@@ -1,16 +1,23 @@
 <h1>Welcome To NEW Message Page<h1>
 
 
+<div>
 
-<%= form_for @message do |f| %>
+<%= form_for @message, url: messages_new_path(@message), method: :post do |f| %>
   
-  
-    <%= f.text_area :text, placeholder: "text" %>
+     <div class="text">
+    <%= f.text_area :text, placeholder: "text" %> 
+    </div><!-- text -->
+
+    <div class="number">
+    <%= f.telephone_field :number, placeholder: "number" %> 
+    </div><!-- number -->
 
   <!-- uploadcare -->
   
   
-  <%= f.submit "Send Message" %>
+  <%= f.submit "Send Message", class: 'btn btn-primary' %>
  
 
 <% end %>
+</div>

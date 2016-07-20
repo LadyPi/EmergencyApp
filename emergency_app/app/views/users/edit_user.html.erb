@@ -1,2 +1,29 @@
 <h1>Welcome To The EDIT USER Page</h1>
 standby
+
+<%= form_for @user, url: users_path(@user), method: :patch do |f| %>
+
+ <div class="first-name"> 
+    <%= f.text_field :first_name, placeholder: "First Name" %>
+    </div> <!-- first-name -->
+
+    <div class="last-name"> 
+	<%= f.text_field :last_name, placeholder: "Last Name" %>
+	</div> <!-- last-name -->
+
+	<div class="email"> 
+	<%= f.text_field :email, placeholder: "Email" %>
+	</div> <!-- email -->
+
+	<div class="number"> 
+	<%= f.telephone_field :number, placeholder: "number" %> 
+	</div> <!-- number -->
+
+	<div class="image-uploadcare-button">
+  <%= f.hidden_field :image, role: "uploadcare-uploader" %>
+  </div>
+
+	<%= f.submit "Update Profile">
+
+<% end %>
+

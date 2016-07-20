@@ -1,11 +1,14 @@
 class UsersController < ApplicationController
-    
+  before_action :logged_in?, only: [:show, :index]
+
     # 'users#index'
     # In the future: all members on same profile
 	
+	# delete after testing or only admin rights
 	def index
+      @user = current_user
 	  @users = User.all	
-	  render :index_user
+	  render index_user
 	end
 
 	# 'users#new'
@@ -16,10 +19,10 @@ class UsersController < ApplicationController
 
 	# 'users#create'
 	def create
-	  user_params = params.require(:user).permit(:first_name, :last_name, :email, :password)
-	    # user_params = params.require(:user).permit(:first_name, :last_name, :email, :password_digest, :location)
 	  @user = User.create(user_params)
-	  redirect_to '/users'
+	  # log-in upon sign up
+	  login(@user) 
+	  redirect_to user_path(@user)
 	end
 
 	# 'users#show'
@@ -49,3 +52,10 @@ class UsersController < ApplicationController
 	end
 
 end
+
+    private
+
+	def user_params
+		params.require(:user).permit(:first_name, :last_name, :email, :password)
+    end
+ 
