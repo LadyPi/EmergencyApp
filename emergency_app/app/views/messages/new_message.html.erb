@@ -10,7 +10,7 @@
     </div><!-- text -->
 
     <div class="number">
-    <%= f.telephone_field :number, placeholder: "number" %> 
+    <%= f.telephone_field :number, placeholder: "Enter phone numbers here" %> 
     </div><!-- number -->
 
   <!-- uploadcare -->
@@ -19,5 +19,9 @@
   <%= f.submit "Send Message", class: 'btn btn-primary' %>
  
 
+<% end %>
+
+<% @contacts.each do |contact| %>
+	<%= "#{contact.first_name} #{contact.last_name}: #{contact.number}" %>
 <% end %>
 </div>

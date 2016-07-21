@@ -3,7 +3,6 @@ class ContactsController < ApplicationController
   
 	# 'contacts#index'
 	def index
-	  # @user = current_user
 	  @contact = Contact.all 
 	  render :index_contact
 	end
@@ -16,7 +15,6 @@ class ContactsController < ApplicationController
 
 	# 'contacts#create'
 	def create
-	  contact_params = params.require(:contact).permit(:first_name, :last_name, :email, :number)
       @contact = Contact.create(contact_params)	
 	  redirect_to '/contacts'
 	end
@@ -30,20 +28,33 @@ class ContactsController < ApplicationController
 	# 'contacts#edit'
 	def edit
 	  @contact = Contact.find(params[:id])
-	  redirect_to '/contacts/:id'
+	  render :edit_contact
 	end
 
     # 'contacts#update'
 	def update
 	  @contact = Contact.find(params[:id])
-	  @contact_params = params.require(:contact).permit(:first_name, :last_name, :email, :cell_phone_number)
-	  redirect_to '/contacts'
-	end
-
+	  @contact.update_attributes(contact_params)
+	  if @contact.save
+	  	# flash_to[:notice] = 'Contact Updated'
+	    redirect_to contact_path(@contact)
+      # else
+      # 	# flash[:error] = @contact.errors.full_messages.join(", ")
+      # 	redirect_to '/contacts/#{@contact.id}'
+	  end
+  end
 	# 'contacts#destroy' (still needs testing)
 	def destroy
 	  @contact = Contact.find(params[:id])
 	  @contact.destroy
 	  redirect_to '/contacts'
 	end
+
+
+ private
+
+	def contact_params
+		params.require(:contact).permit(:first_name, :last_name, :email, :number)
+    end
+
 end

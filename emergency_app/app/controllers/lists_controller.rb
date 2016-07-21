@@ -3,7 +3,6 @@ class ListsController < ApplicationController
   
 # 'lists#index'
 	def index
-	  # @user = current_user
 	  @list = List.all
 	  render :index_list
 	end
@@ -16,11 +15,9 @@ class ListsController < ApplicationController
 
 	# 'lists#create'
 	def create
-	  list_params = params.require(:list).permit(:title, :todo)
 	  @list = List.create(list_params)
-	  # @user = current_user
-	  # @user.lists << @list
 	  render :show_list
+	  # add all lists button to go to all lists
 	end
 
 	# 'lists#show'
@@ -38,9 +35,11 @@ class ListsController < ApplicationController
     # 'lists#update'
 	def update
 	  @list = List.find(params[:id])
-	  @list_params = params.require(:list).permit(:title, :todo)
-	  render :edit_list
+	  @list.update_attributes(list_params)
+	  if @list.save
+      redirect_to list_path(@list)
 	end
+  end
 
 	# 'lists#destroy' (still needs testing)
 	def destroy
@@ -48,4 +47,10 @@ class ListsController < ApplicationController
 	  @list.destroy
 	  redirect_to '/lists'
 	end
+
+	private
+
+	def list_params
+		params.require(:list).permit(:title, :todo)
+    end
 end

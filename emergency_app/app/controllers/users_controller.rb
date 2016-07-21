@@ -6,7 +6,6 @@ class UsersController < ApplicationController
 	
 	# delete after testing or only admin rights
 	def index
-      @user = current_user
 	  @users = User.all	
 	  render :index_user
 	end
@@ -22,7 +21,8 @@ class UsersController < ApplicationController
 	  @user = User.create(user_params)
 	  # log-in upon sign up
 	  login(@user) 
-	  redirect_to user_path(@user)
+	  # just for testing, make sure to about page
+	  redirect_to '/users'
 	end
 
 	# 'users#show'
@@ -40,9 +40,11 @@ class UsersController < ApplicationController
     # 'users#update'
 	def update
 	  @user = User.find(params[:id])
-	  @user_params = params.require(:user).permit(:first_name, :last_name, :email, :password)
-	  redirect_to '/users'
+	  @user.update_attributes(user_params)
+	  if @user.save
+	    redirect_to user_path(@user)
 	end
+  end
 
 	# 'users#destroy' (still needs testing)
 	def destroy

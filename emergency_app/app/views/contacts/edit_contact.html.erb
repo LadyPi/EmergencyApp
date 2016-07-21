@@ -1,7 +1,7 @@
 <h1>Welcome To The EDIT Contacts Page</h1>Standby
 
 
-<%= form_for @contact, url: contacts_path(@contact), method: :patch do |f| %>
+<%= form_for @contact, url: contact_path(@contact), method: :patch do |f| %>
 
  <div class="first-name"> 
     <%= f.text_field :first_name, placeholder: "First Name" %>
@@ -19,9 +19,7 @@
   <%= f.telephone_field :number, placeholder: "number" %> 
   </div> <!-- number -->
 
-	<div class="image-uploadcare-button">
-  <%= f.hidden_field :image, role: "uploadcare-uploader" %>
-  </div>
+	<!-- add image to model schema and then to private params in controller then here -->
 
 	<%= f.submit "Update Contact" %>
 

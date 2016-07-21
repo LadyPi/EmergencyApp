@@ -13,5 +13,10 @@
 <%= @list.todo %>
 <div> <!-- list-todo -->
 
+<%= button_to 'Edit', edit_list_path(@list), :method => :get %>
+ 
+
+  <button type="button" class="homeButton"><a class='homeButtonText' href='/'>Home Page</a></button>
+
 
   ADD Edit/Destroy Button

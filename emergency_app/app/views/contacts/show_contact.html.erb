@@ -18,8 +18,9 @@
 	<%= @contact.number %>
 	</div> <!-- number -->
 
-<button type="button" class="btn btn-success"><a id='editButton' href='/contacts/<%= @contact.id %>/edit'>Edit My Profile</a></button>
+
   
+ <%= button_to 'Edit', edit_contact_path(@contact), :method => :get %>
  
 
   <button type="button" class="homeButton"><a class='homeButtonText' href='/'>Home Page</a></button>

@@ -1,7 +1,7 @@
 <h1>Welcome To The EDIT USER Page</h1>
 standby
 
-<%= form_for @user, url: users_path(@user), method: :patch do |f| %>
+<%= form_for @user, url: user_path(@user), method: :patch do |f| %>
 
  <div class="first-name"> 
     <%= f.text_field :first_name, placeholder: "First Name" %>
@@ -23,7 +23,7 @@ standby
   <%= f.hidden_field :image, role: "uploadcare-uploader" %>
   </div>
 
-	<%= f.submit "Update Profile">
+	<%= f.submit "Update Profile" %>
 
 <% end %>
 

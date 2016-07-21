@@ -25,8 +25,13 @@ Show/Edit/Destroy User
 
     <div class="image"> 
 	<%= @user.image %>
-	</div> i<!-- mage -->
+	</div> <!-- image -->
 
+
+ <%= button_to 'Edit', edit_user_path(@user), :method => :get %>
+ 
+
+  <button type="button" class="homeButton"><a class='homeButtonText' href='/'>Home Page</a></button>
   
   ADD Edit/Destroy Button
   Add Twilio number?
