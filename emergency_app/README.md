@@ -28,8 +28,9 @@ This applicaiton rebuild is currently in progress.
 
 ## Work flow
 
-1. Ideation
-2. Planning, Deliverables and Proposal
+* Ideation
+
+* Planning, Deliverables and Proposal
 
 * User Stories
 
@@ -43,9 +44,11 @@ This applicaiton rebuild is currently in progress.
 
 * Project Trello Board: (https://trello.com/b/tYWvgZsO/final-project-emergency-prep-app)
 
-3. Project Presenation and Approval
-4. Online Research for Project
-5. Execution
+* Project Presenation and Approval
+
+* Online Research for Project
+
+* Execution
 
 ## Tools Set-Up
 1. Sketch
