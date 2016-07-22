@@ -1,4 +1,4 @@
-# Emergency App
+# Emergency Application
 
 ### Overview
 
