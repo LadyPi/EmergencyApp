@@ -28,8 +28,8 @@ This applicaiton rebuild is currently in progress.
 
 ## Work flow
 
-1. Ideation
-2. Planning, Deliverables and Proposal
+(1) Ideation
+(2) Planning, Deliverables and Proposal
 
 * User Stories
 
@@ -43,39 +43,39 @@ This applicaiton rebuild is currently in progress.
 
 * Project Trello Board: (https://trello.com/b/tYWvgZsO/final-project-emergency-prep-app)
 
-3. Project Presenation and Approval
-4. Online Research for Project
-5. Execution
+(3) Project Presenation and Approval
+(4) Online Research for Project
+(5) Execution
 
 ## Tools Set-Up
-1. Sketch
-2. Trello
-3. Sublime
-4. Bootstrap
-5. Chrome Tools
+(1) Sketch
+(2) Trello
+(3) Sublime
+(4) Bootstrap
+(5) Chrome Tools
 
 ---
 
 ## Technologies Used
 
-1. HTML5
-2. CSS3
-3. Ruby
-4. Rails
-5. Active Record
-6. Postgresql
-7. Twilio
+(1) HTML5
+(2) CSS3
+(3) Ruby
+(4) Rails
+(5) Active Record
+(6) Postgresql
+(7) Twilio
 
 ---
 
 ## Documentation
 
-1. Bootstrap (http://getbootstrap.com/)
-2. Rails (http://guides.rubyonrails.org/)
-3. Active Record (http://guides.rubyonrails.org/active_record_basics.html)
-4. Ruby (http://ruby-doc.org/)
-5. Postgresql (https://www.postgresql.org/)
-6. Twilio (https://www.twilio.com/docs/api/rest/sms)
+(1) Bootstrap (http://getbootstrap.com/)
+(2) Rails (http://guides.rubyonrails.org/)
+(3) Active Record (http://guides.rubyonrails.org/active_record_basics.html)
+(4) Ruby (http://ruby-doc.org/)
+(5) Postgresql (https://www.postgresql.org/)
+(6) Twilio (https://www.twilio.com/docs/api/rest/sms)
 
 ---
 
