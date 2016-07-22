@@ -1,6 +1,6 @@
 # Emergency App
 
-### Overview
+## Overview
 
 This application allows a user to connect with loved ones and exectue their emergency prep plan.
 
@@ -8,7 +8,7 @@ This applicaiton build out is currently in progress.
 
 ---
 
-### Documentation Being Adjusted For Changes
+## Documentation Being Adjusted For Changes
 
 * User Stories
 
@@ -19,13 +19,13 @@ This applicaiton build out is currently in progress.
 * Wireframe
 ---
 
-### Browser Compatibility
+## Browser Compatibility
 
 * Tested in Chrome and Safari.
 
 ---
 
-### Work flow
+## Work flow
 
 1. Ideation
 2. Planning, Deliverables and Proposal
@@ -46,7 +46,7 @@ This applicaiton build out is currently in progress.
 4. Online Research for Project
 5. Execution
 
-### Tools Set-Up
+## Tools Set-Up
 1. Sketch
 2. Trello
 3. Sublime
@@ -55,7 +55,7 @@ This applicaiton build out is currently in progress.
 
 ---
 
-### Technologies Used
+## Technologies Used
 
 1. HTML5
 2. CSS3
@@ -67,7 +67,7 @@ This applicaiton build out is currently in progress.
 
 ---
 
-### Documentation
+## Documentation
 
 1. Bootstrap (http://getbootstrap.com/)
 2. Rails (http://guides.rubyonrails.org/)
@@ -78,13 +78,13 @@ This applicaiton build out is currently in progress.
 
 ---
 
-### Challenges
+## Challenges
 
 * It took a little time to configure and understand how Twilio works. There's still quite a bit to understand that is under the hood and look forward to making new discoveries with the service.
 
 ---
 
-### Shout Out...
+## Shout Out...
 
 * Alex, Annabelle, Ben, and Ilias: I appreciate your help, suggestions and encouragement during this and all projects!
 
@@ -110,9 +110,9 @@ This applicaiton build out is currently in progress.
 
 ---
 
-### Wireframe: Stay Tuned!
+## Wireframe: Stay Tuned!
 Being Reconstructed
 
-### Home Page: Stay Tuned!
+## Home Page: Stay Tuned!
 
 Being Reconstructed
