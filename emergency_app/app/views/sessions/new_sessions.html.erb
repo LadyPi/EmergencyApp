@@ -1,7 +1,4 @@
-<h1>Welcome To The Sessions Page</h1>
-Sessions more than likely does not need a page.
-
-Sign In
+<h1>Sign In</h1>
 
 <%= form_for @user, url: "/sessions", method: "post" do |f| %>
   <div>
@@ -10,8 +7,10 @@ Sign In
 
   <div>
     <%= f.password_field :password, placeholder: "Password" %>
-    
-
   </div>
+
+
+  </div class="sign-in-btn">
   <%= f.submit "Sign In" %>
+  </div>
 <% end %>

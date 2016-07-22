@@ -48,3 +48,5 @@ end
 # Twilio
   gem 'twilio-ruby', '~> 4.11.1'
 
+#Cancancan
+gem 'cancancan', '~> 1.10'

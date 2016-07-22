@@ -22,7 +22,7 @@ class UsersController < ApplicationController
 	  # log-in upon sign up
 	  login(@user) 
 	  # just for testing, make sure to about page
-	  redirect_to '/users'
+	  redirect_to user_path(@user)
 	end
 
 	# 'users#show'

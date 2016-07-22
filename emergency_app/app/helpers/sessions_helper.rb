@@ -6,17 +6,18 @@ module SessionsHelper
 	end
 
 	def current_user
-	  @current_user ||= User.find_by_id(session[:user_id]) if session[:user_id]
-	rescue ActiveRecord::RecordNotFound
+	  @current_user ||= session[:user_id] && User.find(session[:user_id]) 
+	# rescue ActiveRecord::RecordNotFound
 	end
 
 	def logged_in?
 	  if current_user == nil
-	  redirect_to "/sign_in"
+	  redirect_to "/"
 	end
   end 
 
     def logout
+      # session.delete(:user_id)
       @current_user = session[:user_id] = nil
     end
 end

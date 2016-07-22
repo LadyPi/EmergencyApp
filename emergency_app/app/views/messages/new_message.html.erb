@@ -1,4 +1,4 @@
-<h1>Welcome To NEW Message Page<h1>
+<h1 class="earthquake-h1">Event Name: Earthquake<h1>
 
 
 <div>
@@ -6,17 +6,17 @@
 <%= form_for @message, url: messages_path, method: :post do |f| %>
   
      <div class="text">
-    <%= f.text_area :text, placeholder: "text" %> 
+    <%= f.text_area :text, placeholder: "Type Your Message Here" %> 
     </div><!-- text -->
 
     <div class="number">
-    <%= f.telephone_field :number, placeholder: "Enter phone numbers here" %> 
+    <%= f.telephone_field :number, placeholder: "Enter Cell Phone Number" %> 
     </div><!-- number -->
 
   <!-- uploadcare -->
   
   
-  <%= f.submit "Send Message", class: 'btn btn-primary' %>
+  <%= f.submit "Send Message", class: 'btn btn-primary send-btn' %>
  
 
 <% end %>

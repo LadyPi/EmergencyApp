@@ -1,26 +1,10 @@
-<h1>Welcome To The EDIT List Page</h1>Standby
+<h1>EDIT Your Emergency Event List</h1>
 
 <%= form_for @list, url: list_path(@list), method: :patch do |f| %>
 
 <div class="list-title">
 <%= f.text_field :title, placeholder: "Title" %>
 <div> <!-- list-title -->
-
-<div class="list-todo">
-<%= f.text_field :todo, placeholder: "To Do" %>
-<div> <!-- list-todo -->
-
-<div class="list-todo">
-<%= f.text_field :todo, placeholder: "To Do" %>
-<div> <!-- list-todo -->
-
-<div class="list-todo">
-<%= f.text_field :todo, placeholder: "To Do" %>
-<div> <!-- list-todo -->
-
-<div class="list-todo">
-<%= f.text_field :todo, placeholder: "To Do" %>
-<div> <!-- list-todo -->
 
 <div class="list-todo">
 <%= f.text_field :todo, placeholder: "To Do" %>

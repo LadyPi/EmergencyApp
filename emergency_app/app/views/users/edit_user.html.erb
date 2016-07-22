@@ -1,5 +1,4 @@
-<h1>Welcome To The EDIT USER Page</h1>
-standby
+<h1>Edit Your Profile</h1>
 
 <%= form_for @user, url: user_path(@user), method: :patch do |f| %>
 
@@ -22,6 +21,7 @@ standby
 	<div class="image-uploadcare-button">
   <%= f.hidden_field :image, role: "uploadcare-uploader" %>
   </div>
+  
 
 	<%= f.submit "Update Profile" %>
 

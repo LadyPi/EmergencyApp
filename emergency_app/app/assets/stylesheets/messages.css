@@ -19,7 +19,15 @@
   width: 450px;
   height: 250px;
 }
-
+.earthquake-h1 {
+  font-size: 50px;
+}
+.btn {
+  font-size: 50px;
+}
+.all-message {
+  font-size: 24px;
+}
 /*
 .launch-div {
   text-align: center;	
