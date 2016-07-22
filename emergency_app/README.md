@@ -104,9 +104,9 @@ This applicaiton rebuild is currently in progress.
 
 * Wayne: Thank you for your support!
 
-* Emilio: I really appreciate you sharing your Twilio-brain wiki with me!
+* Emilio: I really appreciate you sharing your Twilio brain-wiki with me!
 
-* Neda and Mercedes: thank your help behind the scenes - especially for working so hard to expose us to new careers and events. 
+* Neda and Mercedes: thank your help behind the scenes - especially for working so hard to expose us to new careers and events! 
 
 * Justin C.: Your encouragement and willingness to help even if I'm not in your cohort! You are FANTASTIC!
 
