@@ -4,7 +4,7 @@
 
 This application allows a user to connect with loved ones and exectue their emergency prep plan.
 
-This applicaiton build out is currently in progress. 
+This applicaiton rebuild is currently in progress. 
 
 ---
 
@@ -81,7 +81,7 @@ This applicaiton build out is currently in progress.
 
 ## Challenges
 
-* It took a little time to configure and understand how Twilio works. There's still quite a bit to understand that is under the hood and look forward to making new discoveries with the service.
+* There's still quite a bit to understand that is under the hood and look forward to making new discoveries with the service.
 
 ---
 
@@ -89,7 +89,7 @@ This applicaiton build out is currently in progress.
 
 * Alex, Annabelle, Ben, and Ilias: I appreciate your help, suggestions and encouragement during this and all projects!
 
-* TAs: Vikash, Justin, and Ryan for saving us on the last night before our final!
+* TAs: Vikash, Justin, and Ryan (for saving us on the last night before our final)!
 
 * Camila: Thank you for having been such a great support and letting me bounce ideas off of you, while also thinking through technical challenges together!
 
@@ -99,15 +99,15 @@ This applicaiton build out is currently in progress.
 
 * Kabah: Thank you for your css suggestions!
 
-* Wayne: Thank you for your help always!
+* Wayne: Thank you for your support!
 
-* Emilio: I really appreciate you sharing your Twilio brain wiki with me!
+* Emilio: I really appreciate you sharing your Twilio-brain wiki with me!
 
-* Neda and Mercedes: thank your help behind the scenes, especially for working so hard to expose us to new careers and events. 
+* Neda and Mercedes: thank your help behind the scenes - especially for working so hard to expose us to new careers and events. 
 
-* Justin C.: Your encouragement and willingness to help! You are utterly FANTASTIC!
+* Justin C.: Your encouragement and willingness to help even if I'm not in your cohort! You are FANTASTIC!
 
-* Peter E.: Last and by NO means least...thank you for being there since day 1!
+* Peter E.: Last and by NO means least...you're a GEM - thank you for being there since day 1!
 
 ---
 
