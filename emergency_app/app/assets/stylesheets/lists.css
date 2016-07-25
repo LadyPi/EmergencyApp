@@ -1,62 +1,45 @@
-/** {
-	text-align: center;
-}*/
-
 .container {
 	text-align: center;
 }
-.check-box {
-	/*position: relative;*/
-	float: left;
-	max-width: 1px;
+.p-todo {
+	font-size: 18px;
 }
-
-.ex-divs{
-	height: 20px;
+.button_to {
+	height: 35px;
+  	width: 90px;
+  	text-align: center;
+  	display: inline-block;
 }
-
-label {
-	color: black;
+.edit-button {
+	border-radius: 10px;
+	color: red;
+	padding: 1px;
+	text-align: center;
+	margin-left: 585%;
+	margin-top: 10px;
+	margin-left: -10px;
+	margin-right: 2px: 
 }
-
-/*Example css*/
-div#form-wrapper {
-	border: 1px solid black;
-	margin: 0 auto;
+.showDeleteButton {
+	text-align: center;
+  	height: 35px;
+  	width: 90px;
+  	border-radius: 10px;
+  	padding: 1px;
+  	font-size: 22px;
+  	margin: 2px;
+  	margin-left: 46%;
+  	display: inline-block;
 }
-/* if you ever want it to be centered*/
-/* at different screen width use media queries */
-/*for example*/
-@media screen and (min-width: 1000px) {
-	/*the div will be centered on bigger screens*/
-	/* and taking off bootstraps float left*/
-	div#form-wrapper {
-		background-color: blue;
-		float: none;
-		border: 1px solid black;
-		margin: 0 auto;
-	}
-}
-
-
-
-/* ^^^^ ----- example css------ */
-
-.form-group {
-	display: relative;
-	max-width: 800px;
-	margin: -25px;
-}
-
-.check-list {
-	float: right;
-}
-/*.title-field {
-	text-align: center; 
-	margin: 10px;
-}
-
-.todo-field {
-	text-align: center; 
-	margin: 10px;
+.homeButton {
+	text-align: center;
+	height: 35px;
+  	width: 90px;
+	border-radius: 10px;
+	border: solid 2px gray;
+	background-color: white;
+	font-size: 22px;
+	padding: 1px;
+	margin-left: 100px;
+	display: inline-block;
 }
