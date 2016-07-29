@@ -4,8 +4,7 @@
 
 This application allows a user to connect with loved ones and exectue their emergency prep plan.
 
-This applicaiton rebuild is currently in progress. 
-
+Upon graduation I wanted to challenge myself to build further functionality and design so this project is currently in redevelopment. 
 ---
 
 ## Documentation Being Adjusted For Changes
