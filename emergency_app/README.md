@@ -116,5 +116,5 @@ Upon graduation I wanted to challenge myself to build further functionality and 
 ![User Site Workflow](http://ucarecdn.com/f37d4591-9a2a-40d8-9ed7-4a0984452301/)
 
 
-## Home Page: Stay Tuned!
+## Home Page
 ![Home Page](http://ucarecdn.com/563e10e1-2773-45b6-b2d3-0462ced4fc64/)
