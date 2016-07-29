@@ -120,5 +120,4 @@ Upon graduation I wanted to challenge myself to build further functionality and 
 
 
 ## Home Page: Stay Tuned!
-
-Being Reconstructed
+![Home Page](http://ucarecdn.com/563e10e1-2773-45b6-b2d3-0462ced4fc64/)
