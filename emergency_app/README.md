@@ -115,8 +115,9 @@ Upon graduation I wanted to challenge myself to build further functionality and 
 
 ---
 
-## Wireframe: Stay Tuned!
-Being Reconstructed
+## User Site Workflow
+(http://ucarecdn.com/f37d4591-9a2a-40d8-9ed7-4a0984452301/)
+
 
 ## Home Page: Stay Tuned!
 
