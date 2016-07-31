@@ -1,24 +1,24 @@
-<h1>Your List</h1>
+<h1>Your Event</h1>
 
- <!-- Show/Edit List -->
+ <!-- Show/Edit Event -->
 
-<!--  Figure out how to show whole list properly
+<!--  Figure out how to show whole event properly
  BStrap Form Template? -->
 
 <div class='container'>
 
-<div class="list-title">
-<span class="p-title">List Title:</span><%= @list.title %>
-<div> <!-- list-title -->
+<div class="event-title">
+<span class="p-event">Event Title:</span><%= @event.title %>
+<div> <!-- event-title -->
 
-<div class="list-todo">
-<span class="p-todo">To Do:</span><%= @list.todo %>
-<div> <!-- list-todo -->
+<div class="event-todo">
+<span class="p-todo">To Do:</span><%= @event.todo %>
+<div> <!-- event-todo -->
 
-<div class='list-show-buttons'>
-<%= button_to 'Edit', edit_list_path(@list), :method => :get, :class => 'edit-button' %>
+<div class='event-show-buttons'>
+<%= button_to 'Edit', edit_event_path(@event), :method => :get, :class => 'edit-button' %>
 
   <!-- ADD Edit/Destroy Button -->
   <input class='showDeleteButton' type="submit" name='_method' value="Delete">
-</div> <!-- list-buttons -->
+</div> <!-- event-buttons -->
   </div>

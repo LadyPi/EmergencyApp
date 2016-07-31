@@ -1,7 +1,7 @@
-<h1>Add A New List</h1>
+<h1>Add A New Event</h1>
 
 
-<%= form_for @list, url: lists_path, method: :post do |f| %>
+<%= form_for @event, url: events_path, method: :post do |f| %>
 
 <!-- GO TO SHOW and add that content in here -->
 
@@ -14,12 +14,12 @@
   <input type="checkbox"> -->
 
 
-<%= f.text_field :title, placeholder: "Title" %>
-<%= f.text_field :todo, placeholder: "To Do" %>
+<%= f.text_field :task, placeholder: "task" %>
+<%= f.text_field :step, placeholder: "step" %>
 
 
 
-  <%= f.submit "Create New List" %>
+  <%= f.submit "Create New Step" %>
 <% end %>
 
 

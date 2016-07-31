@@ -1,15 +1,15 @@
 <h1>EDIT Your Emergency Event List</h1>
 
-<%= form_for @list, url: list_path(@list), method: :patch do |f| %>
+<%= form_for @event, url: event_path(@event), method: :patch do |f| %>
 
-<div class="list-title">
-<%= f.text_field :title, placeholder: "Title" %>
-<div> <!-- list-title -->
+<div class="event-task">
+<%= f.text_field :task, placeholder: "task" %>
+<div> <!-- event-task -->
 
-<div class="list-todo">
-<%= f.text_field :todo, placeholder: "To Do" %>
-<div> <!-- list-todo -->
+<div class="event-step">
+<%= f.text_field :, placeholder: "step" %>
+<div> <!-- event-task -->
 
-<%= f.submit "Update List" %>
+<%= f.submit "Update Event" %>
 
 <% end %>

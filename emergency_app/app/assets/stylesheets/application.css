@@ -29,6 +29,10 @@
 }
 .logout-btn {
 	color: #0275d8;
+	border: none;
+    outline:none;
+    font-size: 20px;
+    margin-top: 6px;
 }
 .marg-h1 {
 	margin-top: 20px;
