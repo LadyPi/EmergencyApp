@@ -1,6 +1,22 @@
+.sign-in-btn {
+  background-color: blue;
+}
+.btn {
+  background-color: #337ab7;
+}
+
+.btn-success {
+  width: 390px;
+  height: 40px;
+  border-radius: 4px;
+  font-size: 16px;
+  /*font-weight: bold;*/
+}
+
+
 /*@import "compass/css3";*/
 
-$body-bg: #c1bdba;
+/*$body-bg: #c1bdba;
 $form-bg: #13232f;
 $white: #ffffff;
 
@@ -117,9 +133,9 @@ label.active {
 
 label.highlight {
 	color:$white;
-}
+}*/
 
-input, textarea {
+/*input, textarea {
   font-size:22px;
   display:block;
   width:100%;
@@ -135,9 +151,9 @@ input, textarea {
 		outline:0;
 		border-color:$main;
   }
-}
+}*/
 
-textarea {
+/*textarea {
   border:2px solid $gray-light;
   resize: vertical;
 }
@@ -145,9 +161,9 @@ textarea {
 .field-wrap {
   position:relative;
   margin-bottom:40px;
-}
+}*/
 
-.top-row {
+/*.top-row {
   &:after {
     content: "";
     display: table;
@@ -162,9 +178,9 @@ textarea {
       margin:0;
     }
   }
-}
+}*/
 
-.button {
+/*.button {
   border:0;
   outline:none;
   border-radius:0;
@@ -190,4 +206,4 @@ textarea {
 .forgot {
   margin-top:-20px;
   text-align:right;
-}
+}*/

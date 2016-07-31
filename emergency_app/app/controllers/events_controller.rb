@@ -22,6 +22,8 @@ class EventsController < ApplicationController
 
 	# 'events#show'
 	def show
+   #    p current_user.tasks
+	  # @tasks = current_user.tasks
 	  @event = Event.find(params[:id])
 	  render :show_event
 	end

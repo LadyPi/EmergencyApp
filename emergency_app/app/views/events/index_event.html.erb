@@ -1,12 +1,11 @@
 <h1>All Emergency Event Tasks</h1>
 
-<% @events.each do |events| %>
+<% @event.each do |event| %>
 
-<div class="eventss-container">
-    <h6 class="events-task"><%= events.task %> </h6>
+<div class="events-container">
+    <h6 class="events-title"><%= event.title %> </h6>
 
-  <h5 class="events-step-text"><%= events.step %> </h5>
-	<% end %>
-</div>
 
 <!-- Add Ability to Click and go to events (can delete there also) -->
+
+<% end %>
