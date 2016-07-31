@@ -1,0 +1,24 @@
+<h1>Your List</h1>
+
+ <!-- Show/Edit List -->
+
+<!--  Figure out how to show whole list properly
+ BStrap Form Template? -->
+
+<div class='container'>
+
+<div class="list-title">
+<span class="p-title">List Title:</span><%= @list.title %>
+<div> <!-- list-title -->
+
+<div class="list-todo">
+<span class="p-todo">To Do:</span><%= @list.todo %>
+<div> <!-- list-todo -->
+
+<div class='list-show-buttons'>
+<%= button_to 'Edit', edit_list_path(@list), :method => :get, :class => 'edit-button' %>
+
+  <!-- ADD Edit/Destroy Button -->
+  <input class='showDeleteButton' type="submit" name='_method' value="Delete">
+</div> <!-- list-buttons -->
+  </div>

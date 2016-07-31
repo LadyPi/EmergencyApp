@@ -1,6 +1,6 @@
 class MessagesController < ApplicationController 
   include MessagesHelper
-  before_action :logged_in?
+  before_action :logged_in?, only: [:show, :index, :new]
   
   # 'messages#index'
 	def index

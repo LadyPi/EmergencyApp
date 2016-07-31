@@ -47,11 +47,13 @@ Rails.application.routes.draw do
 
   # Todos
 
+  resources :tasks
+
   ########################################################################
   
   # Contacts
 
-  resources :lists
+  resources :events
 
   ########################################################################
 

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160720023449) do
+ActiveRecord::Schema.define(version: 20160729030623) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,31 +20,40 @@ ActiveRecord::Schema.define(version: 20160720023449) do
     t.string   "first_name"
     t.string   "last_name"
     t.string   "email"
-    t.string   "cell_phone_number"
-    t.datetime "created_at",        null: false
-    t.datetime "updated_at",        null: false
-    t.string   "number"
-    t.integer  "user_id"
-  end
-
-  create_table "lists", force: :cascade do |t|
-    t.string   "name"
-    t.string   "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string   "title"
-    t.string   "todo"
     t.integer  "user_id"
+    t.string   "number"
+  end
+
+  create_table "event_contacts", force: :cascade do |t|
+    t.integer  "contact_id"
+    t.integer  "event_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "event_contacts", ["contact_id"], name: "index_event_contacts_on_contact_id", using: :btree
+  add_index "event_contacts", ["event_id"], name: "index_event_contacts_on_event_id", using: :btree
+
+  create_table "events", force: :cascade do |t|
+    t.string   "title"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "messages", force: :cascade do |t|
     t.string   "text"
-    t.datetime "created_at",        null: false
-    t.datetime "updated_at",        null: false
-    t.integer  "cell"
-    t.integer  "cell_phone_number"
-    t.string   "number"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.integer  "user_id"
+    t.string   "number"
+  end
+
+  create_table "tasks", force: :cascade do |t|
+    t.string   "step"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|
@@ -60,4 +69,6 @@ ActiveRecord::Schema.define(version: 20160720023449) do
     t.string   "number"
   end
 
+  add_foreign_key "event_contacts", "contacts"
+  add_foreign_key "event_contacts", "events"
 end
