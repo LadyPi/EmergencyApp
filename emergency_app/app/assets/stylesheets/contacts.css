@@ -1,0 +1,14 @@
+/*contacts title*/
+h1 {
+  margin-left: -75%;
+}
+/* table headings*/
+.th-titles {
+  text-align: left;
+  font-size: 16px;
+}
+/*table data*/
+.li-data {
+  text-align: left;
+  font-size: 16px;
+}

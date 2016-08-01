@@ -1,18 +1,19 @@
-<h1>Sign In</h1>
+<h1>Welcome Back!</h1>
 
-<div id="sign-up-form">
-<%= form_for @user, url: "/sessions", :class => "form-group text-center", method: "post" do |f| %>
-  <div>
-    <%= f.text_field :email, placeholder: "Email", :class => "form-control" %>
-  </div>
+	<div id="sign-in-form">
+      <%= form_for @user, url: "/sessions", :class => "form-group text-center", method: "post" do |f| %>
+    
+      <div>
+        <%= f.text_field :email, placeholder: "Email", :class => "form-control" %>
+      </div>
 
-  <div>
-    <%= f.password_field :password, placeholder: "Password", :class => "form-control" %>
-  </div>
+      <div>
+        <%= f.password_field :password, placeholder: "Password", :class => "form-control" %>
+      </div>
 
+      <div>
+        <%= f.submit "Sign In", :class => 'btn-success' %>
+      </div>
 
-  </div class="sign-in-btn">
-  <%= f.submit "Sign In", :class => 'btn-success sign-in-button' %>
-  </div>
-<% end %>
-</div>
+      <% end %>
+    </div>

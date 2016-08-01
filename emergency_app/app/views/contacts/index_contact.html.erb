@@ -1,14 +1,35 @@
-<h1>All Contacts</h1>
+<h1>Contacts</h1>
 
-<% @contact.each do |contact| %>
 
-<div class="contacts-container">
-  <h6 class="contact-first-name"><%= contact.first_name %> </h6>
-  <h6 class="contact=last-name"><%= contact.last_name %> </h6>
-  <h6 class="contact-email"><%= contact.email %> </h6>
-  <h6 class="number"><%= contact.number %> </h6>
+<div class="container">
+ 
+
   
-	<% end %>
+ <table class="table table-striped">
+
+    <thead>
+    <tr>
+        <th class="th-titles">FIRST NAME</th>
+        <th class="th-titles">LAST NAME</th>
+        <th class="th-titles">EMAIL</th>
+        <th class="th-titles">CELL PHONE NUMER</th>
+    </tr>
+    </thead> 
+    
+    
+    <tbody>
+    <% @contact.each do |contact| %>
+      <tr>
+        <td class="li-data"><%= contact.first_name %></td>
+        <td class="li-data"><%= contact.last_name %></td>
+        <td class="li-data"><%= contact.email %></td>
+        <td class="li-data"><%= contact.number %></td>
+        <td><%= button_to 'Edit', edit_contact_path(@contact), :method => :get %></td>
+        <td><input class='showDeleteButton' type="submit" name='_method' value="Delete"></td>
+      </tr>  
+    <% end %>
+
+    </tbody>
+  
+  </table> 
 </div>
-
-

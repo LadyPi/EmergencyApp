@@ -37,24 +37,24 @@
 .box-title-i {
 	background-color: black;
 	border-radius: 10px;
-/*	height: 30px;*/
+	height: 30px;
 	font-size: 24px;
 	opacity: 0.9;
 }
 .box-title-e {
 	background-color: black;
 	border-radius: 10px;
-	/*height: 30px;*/
+	height: 30px;
 	font-size: 24px;
 	opacity: 0.9;
 }
 .box-title-a {
 	background-color: black;
 	border-radius: 10px;
-	/*height: 30px;*/
+	height: 30px;
 	font-size: 24px;
 	opacity: 0.9;
-/*}
+}
 .btn-lg {
 	background-color: black;
-}*/
+}

@@ -1,6 +1,22 @@
-.sign-in-btn {
-	background-color: blue;
+/*member sign in form */
+#sign-in-form {
+  width: 30%;
+  margin: auto;
 }
+/*member sign in form fields*/
+.form-control {
+  text-align: left;
+}
+/*member sign in button*/
 .btn {
-	background-color: #337ab7;
+  background-color: #337ab7;
+}
+.btn-success {
+  width: 15%px;
+  height: 38px;
+  border-radius: 4px;
+  font-size: 16px;
+  /*font-weight: bold;*/
+  float: left;
+  margin-top: 15px;
 }

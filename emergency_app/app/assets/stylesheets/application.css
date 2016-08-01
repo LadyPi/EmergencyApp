@@ -20,24 +20,22 @@
 	width: 100%;
 	border: black;
 }
-#sign-up-form {
-	width: 50%;
-	margin: auto;
-}
+/*learn more button in front of hero image*/
 .btn-success {
 	background-color: #0275d8;
 }
+/*log out button*/
 .logout-btn {
 	color: #0275d8;
 	border: none;
     outline:none;
     font-size: 20px;
-    margin-top: 6px;
+    margin-top: 9px;
 }
-.marg-h1 {
+/*.marg-h1 {
 	margin-top: 20px;
 	margin-bottom: 30px;
-}
+}*/
 .black-button {
 	background-color: black;
 }
