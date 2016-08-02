@@ -1,29 +1,27 @@
-<h1>Add New Contact</h1> 
+<h1>Add A New Contact</h1> 
 
-New Contact
-
-<%= form_for @contact, url: contacts_path, method: :post do |f| %>
+<div id="new-contact-form">
+  <%= form_for @contact, url: contacts_path, method: :post do |f| %>
+ 
   <div>
-  <div>
-    <%= f.text_field :first_name, placeholder: "First Name" %>
+    <%= f.text_field :first_name, placeholder: "First Name", :class => "form-control" %>
   </div>
+  
   <div>
-    <%= f.text_field :last_name, placeholder: "Last Name" %>
+    <%= f.text_field :last_name, placeholder: "Last Name", :class => "form-control" %>
   </div>
 
-  <div class="number"> 
-  <%= f.telephone_field :number, placeholder: "number" %> 
-  </div> <!-- number -->
-
-  <div>
-    <%= f.text_field :email, placeholder: "Email" %>
+  <div> 
+  <%= f.telephone_field :number, placeholder: "Cell Number", :class => "form-control" %> 
   </div>
+
   <div>
+    <%= f.text_field :email, placeholder: "Email", :class => "form-control" %>
+  </div>
+   
+  <div> 
+  <%= f.submit "Add New Contact", :class => 'btn-success' %>
+  </div>
 
-
-<!-- IS THIS AN INTEGAR FIELD -->
-
-    
-  <%= f.submit "Add New Contact" %>
-
-<% end %>
+  <% end %>
+</div>

@@ -1,11 +1,12 @@
 /*new user sign up form */
 #sign-up-form {
-  width: 30%;
   margin: auto;
+  text-align: center;
 }
 /*new user sign up form fields*/
 .form-control {
   text-align: left;
+  width: 40%;
 }
 /*new user sign up button*/
 .btn {
