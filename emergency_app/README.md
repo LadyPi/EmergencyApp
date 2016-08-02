@@ -2,14 +2,10 @@
 
 ### Overview
 
-This application allows a user to connect with loved ones and exectue their emergency prep plan.
+This application allows a user to connect with loved ones and execute their emergency prep plan.
 
-This applicaiton rebuild is currently in progress. 
-
+Upon graduation I wanted to challenge myself to build further functionality and design so this project is currently in redevelopment. 
 ---
-
-## Documentation Being Adjusted For Changes
-
 * User Stories
 
 * ERD
@@ -64,10 +60,11 @@ This applicaiton rebuild is currently in progress.
 1. HTML5
 2. CSS3
 3. Ruby
-4. Rails
-5. Active Record
-6. Postgresql
-7. Twilio
+4. JavaScript
+5. Rails
+6. Active Record
+7. Postgresql
+8. Twilio
 
 ---
 
@@ -77,8 +74,9 @@ This applicaiton rebuild is currently in progress.
 2. Rails (http://guides.rubyonrails.org/)
 3. Active Record (http://guides.rubyonrails.org/active_record_basics.html)
 4. Ruby (http://ruby-doc.org/)
-5. Postgresql (https://www.postgresql.org/)
-6. Twilio (https://www.twilio.com/docs/api/rest/sms)
+5. JavaScript (https://developer.mozilla.org/en-US/)
+6. Postgresql (https://www.postgresql.org/)
+7. Twilio (https://www.twilio.com/docs/api/rest/sms)
 
 ---
 
@@ -92,7 +90,7 @@ This applicaiton rebuild is currently in progress.
 
 * Alex, Annabelle, Ben, and Ilias: I appreciate your help, suggestions and encouragement during this and all projects!
 
-* TAs: Vikash, Justin, and Ryan (for saving us on the last night before our final)!
+* TAs: Vikash, Justin, and Nick (for saving us on the last night before our final)!
 
 * Camila: Thank you for having been such a great support and letting me bounce ideas off of you, while also thinking through technical challenges together!
 
@@ -114,9 +112,9 @@ This applicaiton rebuild is currently in progress.
 
 ---
 
-## Wireframe: Stay Tuned!
-Being Reconstructed
+## User Site Workflow
+![User Site Workflow](http://ucarecdn.com/f37d4591-9a2a-40d8-9ed7-4a0984452301/)
 
-## Home Page: Stay Tuned!
 
-Being Reconstructed
+## Home Page
+![Home Page](http://ucarecdn.com/563e10e1-2773-45b6-b2d3-0462ced4fc64/)
