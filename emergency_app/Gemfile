@@ -52,3 +52,7 @@ end
 
 #Cancancan
 gem 'cancancan', '~> 1.10'
+
+group :development, :test do
+  gem 'sqlite3'
+ end
